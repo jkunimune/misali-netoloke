@@ -5,7 +5,7 @@ import "./lib/plotly.min.js";
 // @ts-ignore
 var Plotly = window.Plotly;
 import { jena_fibonaci } from "./matike.js";
-$('#botone').onclick(function () {
+$('#botone').on('click', function () {
     Plotly.newPlot($('#grafe')[0], [{
             y: jena_fibonaci(10)
         }]);

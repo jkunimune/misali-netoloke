@@ -7,7 +7,7 @@ const Plotly = window.Plotly;
 
 import {jena_fibonaci} from "./matike.js";
 
-$('#botone').onclick(() => {
+$('#botone').on('click', function () {
     Plotly.newPlot(
         $('#grafe')[0],
         [{
